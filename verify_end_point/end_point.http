@@ -1,0 +1,28 @@
+@api = http://localhost:3000/products
+###
+
+GET {{api}}
+###
+
+POST  {{api}}
+Content-Type: application/json
+
+{
+    "title":"MotherBoard",
+    "price":3500,
+    "image": "https://mexx-img-2019.s3.amazonaws.com/motherboard-msi-gamer_40378_1.jpeg",
+    "description": "pc component",
+    "quantity":350
+}
+###
+
+PUT  {{api}}/61657212ec0eaf92282afa20
+Content-Type: application/json
+
+{
+    "title":"MotherBoard2",
+      "price":4200,
+    "image": "https://mexx-img-2019.s3.amazonaws.com/motherboard-msi-gamer_40378_1.jpeg",
+    "description": "pc component",
+    "quantity":90
+}
